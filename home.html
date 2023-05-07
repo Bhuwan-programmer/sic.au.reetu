@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline International College</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        
+
+
+        #ab
+        {
+            background-color: white;
+            width: 850px;
+            margin: auto;
+        }
+        
+        ul,li{
+            list-style-type: none;
+            display: block;
+           
+        }
+        b{
+            color: skyblue;
+            font-size: 60px;
+        }
+        ul{
+           margin-left: 150px;
+           
+
+           
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        li{
+            float: left;
+            margin: 15px;
+            cursor: pointer;
+            font-size: 20px;
+            color:black;
+            padding:5px;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+           
+        }
+        #firstcontent{
+            background-color: yellow;
+            width: 700px;
+            height:200px;
+            padding: 45px;
+            color:orangered;
+           
+        }
+        .nav{
+            background-color: skyblue;
+            height: 65px;
+            width: 100%;
+           
+ 
+  
+  
+            
+            
+        }
+        #sunbeamlogin,#didaskologin,#elearning{
+            background-color: orange;
+            padding: 5px;
+            border-radius: 25px;
+        }
+        #sunbeamlogin:hover{
+            background-color: red;
+            color:white;
+            transition: .5s;
+        }
+        #didaskologin:hover{
+            background-color: red;
+            color:white;
+            transition: .5s;
+        }
+        #elearning:hover{
+            background-color: red;
+            color:white;
+            transition: .5s;
+        }
+        #home:hover{
+            color:white;
+            transition: .5s;
+        
+
+        }
+        #about:hover{
+            color:white;
+            transition: .5s;
+            position: relative;
+
+        }
+      
+  
+        #course:hover{
+            color:white;
+            transition: .5s;
+
+        }
+        #course:hover{
+            color:white;
+            transition: .5s;
+
+        }
+        #admission:hover{
+            color:white;
+            transition: .5s;
+
+        }
+        #student:hover{
+            color:white;
+            transition: .5s;
+
+        }
+        #contact:hover{
+            color:white;
+            transition: .5s;
+
+        }
+        .body{
+            margin-left: 10px;
+        }
+        #content2{
+            float: right;
+            margin-top: -35%;
+          
+          
+           
+           
+        }
+        @keyframes bhuwan
+        {
+           from
+           {
+               width: 1%;
+           }
+           to
+           {
+               width: 30%;
+           }
+           
+        }
+        
+        
+        #hr,#one,#two{
+  border: 5px solid orangered;
+  width:30%;
+  animation: bhuwan 5s linear infinite;
+  transition: 5s;
+  
+  border-radius: 5px;
+        }
+       
+      
+        #first:hover{
+           opacity: 0.5;
+            cursor: pointer; 
+
+        }
+        #second
+        {
+            float: right;
+            margin-left: -15px;
+            margin-top: -4%;
+        }
+        #second:hover{
+            opacity: 0.5;
+            cursor: pointer; 
+
+        }
+        #content3
+        {
+            background-color: crimson;
+            width:650px;
+            padding: 15px;
+            margin-left: 10px;
+           
+        }
+        #pink{
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #ptext
+        {
+            color: aqua;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #lc
+        {
+            
+          
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 25px;
+        }
+        
+        #welfare{
+            background-color: #313131;
+            margin-left: 10px;
+            width: 650px;
+            padding: 15px;
+        }
+        #lc{
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #a,#b,#c,#d
+        {
+            color:skyblue;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #text{
+            color:orange;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #decision
+        {
+            background-color: slateblue;
+            width: 674px;
+            float: right;
+            margin-top: -14.39%;
+            padding:2px;
+            height: 170px;
+            
+        }
+        .decision
+        {
+            text-align: center;
+            color:white;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .contents
+        {
+            
+            color:white;
+            
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        #knowus
+        {
+            background-color: #1b1f2e;
+            margin-top: -2%;
+            padding: 10px;
+            height: 300px;
+            width: 100%;
+
+        }
+        #all
+        {
+            color:white;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #get
+        {
+            color:orange;
+            float: right;
+            margin-top: -18%;
+           margin-right: 10%;
+           font-family: Arial, Helvetica, sans-serif;
+           font-weight: bold;
+        }
+        #btn:hover{
+            background-color: white;
+            color:crimson;
+        }
+        #btn
+        {
+            font-weight: bold;
+        }
+        #click
+        {
+            cursor: pointer;
+            
+            color:orange;
+           
+           
+        }
+        #copyright{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+        }
+        #footer
+        {
+            background-color: black;
+            padding: 16px;
+            width: 100%;
+            
+            
+        }
+        @media only screen and (max-width: 1300px) {
+  #home,#contact,#about,#course,#student,#admission,#sunbeamlogin,#didaskologin,#elearning,#first,#second{
+    display: none;
+  }
+}
+@media only screen and (max-width: 1300px) {
+    #firstcontent{
+            background-color: yellow;
+            width: 500px;
+            height:200px;
+            padding: 22.5px;
+            color:orangered;
+        }
+        #content2{
+           
+           font-size: 15px;
+           margin-top: -6%;
+           background-color: khaki;
+          padding: 5px;
+          width: 100%;
+          margin: 0px;
+          
+         
+          
+           
+        }
+        .body{
+            margin:0px;
+        }
+        #content3
+        {
+            background-color: crimson;
+            width:100%;
+            padding: 15px;
+            margin-top: -5%;
+            margin: 0px;
+          
+          
+        }
+        #welfare
+        {
+            margin: 0px;
+            height: 300px;
+        }
+          #text
+          {
+              font-size: 10px;
+          }
+        
+        b{
+            font-size: 35px;
+        }
+        h1{
+            font-size: 28px;
+        }
+  
+}
+
+       
+        
+        
+        
+       
+    </style>
+    
+    
+    <img src="logo.png" >
+    
+   <div class="nav">
+ 
+   <ul>
+      
+       <li id="home">Home</li>
+       <li id="about">About Us</li>
+       <li id="course">Courses</li>
+       <li id="admission">Admission</li>
+       
+   </ul>
+   </div>
+   
+  <br>
+  <div class="body">
+   <div id="firstcontent">
+       <h1><b>Welcome</b> to <br> Skyline International College</h1>
+       
+       
+   </div>
+   <br>
+   
+   <img id="first" src="sunbeamcarousel1.jpg" style="height:50%; width:50%; ">
+ 
+   
+   
+   
+   <br>
+   <div id="content2">
+   <h3>Programs</h3>
+   <hr id="hr">
+   <p>Develop fine and grows skills and more. Please check our programs from the courses section</p>
+   <h3>Online</h3>
+   <hr id="one">
+   <p>Online tools and applications to maintain student activities</p>
+   <h3>Awards</h3>
+   <hr id="two">
+   <p>Australian recognised Course Certification</p>
+   
+   </div>
+   
+  </div>
+  <br><br>
+  <img id="second" src="sunbeamcarousel2.jpg" style="height:50%; width:50%; ">
+  <div id="content3">
+ <h3 id="pink">Quality Commited</h3>
+ <br>
+ <p id="ptext">We aspire to deliver consistent, high quality services, and apply quality systems that support training and assessment superiority.</p>
+ <br>
+ <h3 id="pink">Mission</h3>
+ <br>
+ <p id="ptext">Skyline mission is to develop people’s skills, while keeping them current and introducing new skills.</p>
+ </div>
+ <div id="welfare">
+ <h3 id="lc">Welfare and Personal Safety Support Services</h3>
+ <br>
+ <p id="a">LLN Support</p>
+ <p id="text">Language, Literacy and Numeracy (LLN) support will be identified through pre-training review, LLN test, and orientation session and/or trainer/assessor recommendation SBIC will analyse the information collected and prepare a strategy to support the students. The strategy may include provide one on one support after the class hours, provide extra reading or tasks to complete related to the areas identified.</p>
+ <p id="b">Technology Support</p>
+ <p id="c">General Support</p>
+ <p id="d">Learning and Support</p>
+ </div>
+ <br>
+ <div id="decision">
+    <h2 class="decision">Why Choose us?</h2>
+    <br>
+    <p class="contents">We deliver Australian Qualifications Framework (AQF) <br> qualification which is drawn from Australian National <br>Training Packages and recognised within Australia and <br>internationally.</p>
+
+</div>
+<div class="bg">
+
+<h2 style="font-size:40px; text-align: center; font-family: Arial, Helvetica, sans-serif; color: #313131; font-weight: bold;"  class="about">About SIC</h2>
+
+<br>
+<p style=" color:black; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20px;" id="ab">Skyline International College is an Australian Registered Training Organisation  operating under the National Vocational Education and Training (VET) Quality Framework located in the heart of Sydney city in NSW Australia. This is a regulated framework which is administered by the Australian Skills Quality Authority (ASQA) and Commonwealth Register of Institutions and Courses for Overseas Students. Skyline is an approved organisation to offer services to international student. Skyline is regulated by ASQA under the Education Services for Overseas Students.</p>
+
+<br><br><br>
+<h2 style=" font-size:40px;text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  font-weight:bold; color: #313131;" class="courses">Our Courses</h2>
+<br>
+<p style="color:black; font-size:20px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: center;">BSB50420 - Diploma/Advanced of Information Technology</p>
+<br>
+
+<p  style="color:black;  font-size:20px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  text-align: center;">BSB60420  Diploma of Hospitality Management</p>
+</div>
+
+<br><br>
+<div id="knowus">
+    <div id="all">
+
+
+    <p>Skyline International College Pty Ltd.</p>
+    <p>ABN: 15 614 078 232</p>
+    <p>RTO ID: 45233</p>
+    <p>CRICOS Provider Code: 03639C</p>
+    <p>Please download the student handbook from  link below. </p>
+    
+    <a href="#"><button type="button" class="btn btn-danger" id="btn">GET STUDENT HANDBOOK</button></a>
+    </div>
+    <div id="design">
+    <div id="get">
+        <p>Get IN Touch</p>
+        
+        
+        
+        
+            Central <br>
+           Sydney,Australia</p></a>
+            <p>Contact</p>
+            
+            <p>info@sic.edu.au</p>
+    </div>
+    </div>
+    </div>
+ 
+ 
+ <script>
+    $(document).ready(function(){
+        $("#text").hide();
+   $("#a").click(function(){
+     $("#text").fadeToggle();
+   });
+   
+ });
+</script>
+<script>
+    $(document).ready(function() {
+$("#about").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#lc").offset().top
+     }, 1000);
+ });
+});
+</script>
+<script>
+    $(document).ready(function() {
+$("#course").click(function() {
+     $('html, body').animate({
+         scrollTop: $(".courses").offset().top
+     }, 1000);
+ });
+});
+</script>
+<div id="footer">
+<p id="copyright">© 2023 All Rights Reserved, Designed By Reetu Cheetri</p>
+</div>
+
+
+</body>
+</html>
